@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Safe QR Scanner | Protege tus escaneos",
-  description: "Analiza cualquier código QR con la cámara o subiendo una imagen para descubrir si esconde malware o phishing usando la tecnología de VirusTotal.",
+  title: "Safe QR Scanner | Protect Your Scans",
+  description: "Scan any QR code and check if it contains malware or phishing links. Stay safe while scanning!",
   openGraph: {
     title: "Safe QR Scanner",
-    description: "Analiza cualquier código QR y descubre si esconde malware o phishing.",
-    url: "https://qr-seguro.vercel.app", // Cámbialo luego por tu dominio final
+    description: "Scan any QR code and check if it contains malware or phishing links. Stay safe while scanning!",
+    url: "https://secure-qr-scanner.vercel.app/",
     siteName: "Safe QR Scanner",
     type: "website",
   },
@@ -22,8 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="en">
       <body className={inter.className}>{children}</body>
+      <Analytics />
     </html>
   );
 }
