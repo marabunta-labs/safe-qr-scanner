@@ -1,5 +1,10 @@
 # 🛡️ Safe QR Scanner
 
+[![Deploy on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://secure-qr-scanner.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=for-the-badge)](https://secure-qr-scanner.vercel.app/)
+
+**🚀 Try it live here:** [https://secure-qr-scanner.vercel.app/](https://secure-qr-scanner.vercel.app/)
+
 > A fast, secure, and privacy-first QR code scanner that checks extracted URLs against the VirusTotal database to protect users from phishing and malware. 
 > 
 > *Built as part of my "12 Projects in 12 Months" challenge.*
